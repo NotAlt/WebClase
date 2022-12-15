@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Basicos</title>
+    <link rel="stylesheet" href="../../../../styles.css" />
+    <script type="text/javascript" src="../../../../default.js"></script>
+  </head>
+  <body>
+    <b>
+      <h1>formulario 3 | ampliaci&oacute;n</h1>
+    </b>
+    <hr />
+
+    <form method="post" action="procesa.html">
+      <fieldset>
+        <legend>Completar</legend>
+
+        Elija un color <input type="color" name="color" /> <br />
+        <textarea name="textarea" rows="3">
+Por favor escriba aqu&iacute;</textarea
+        >
+        <br /><br />
+
+        <select>
+          <option name="lang" value="java">Java</option>
+          <option name="lang" value="python">Python</option>
+          <option name="lang" value="visual_basic">Visual Basic</option>
+        </select>
+
+        <br /><br />
+        <input name="ASIR" type="checkbox" value="idiomaingles" /> ASIR <br />
+        <input name="DAM" type="checkbox" value="idiomaaleman" /> DAM <br />
+        <input name="DAW" type="checkbox" value="idiomafrances" /> DAW <br />
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Rellene las siguientes opciones</legend>
+
+        Elija una fecha <input type="date" name="fecha" /> <br />
+        Elija una fichero <input type="file" name="file" /> <br />
+        <br /><br />
+
+        <select multiple>
+          <option name="SMIR" value="SMIR">SMIR</option>
+          <option name="ASIR" value="ASIR">ASIR</option>
+          <option name="DAM" value="DAM">DAM</option>
+          <option name="DAW" value="DAW">DAW</option>
+        </select>
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Resetear" />
+    </form>
+
+    <br /><br />
+  </body>
+</html>

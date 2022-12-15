@@ -1,0 +1,27 @@
+body {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 50%),
+    rgb(0, 0, 155, 0%),
+    rgb(0, 0, 155, 50%)
+  );
+}
+h1 {
+  font-family: Arial;
+}
+
+p,
+legend,
+fieldset,
+td,
+input,
+a,
+s,
+i,
+u,
+sup,
+sub,
+center,
+b,li
+th {
+  font-family: Arial;
+}

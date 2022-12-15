@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Basicos</title>
+    <link rel="stylesheet" href="../../../../styles.css" />
+    <script type="text/javascript" src="../../../../default.js"></script>
+  </head>
+  <body>
+    <b>
+      <h1>formulario 2 | ampliaci&oacute;n</h1>
+    </b>
+    <hr />
+
+    <form method="post" action="procesa.html">
+      <fieldset>
+        <legend>Indique sus preferencias por favor</legend>
+        Elija un fichero: <br /><input type="file" /> <br /><br />
+        Elije una fecha <input name="fecha" type="date" /> <br />
+
+        <input type="radio" name="cpu" /> AMD
+        <input type="radio" name="cpu" /> Intel i5
+        <input type="radio" name="cpu" /> Intel i7
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Indique sus preferencias por favor</legend>
+
+        <input type="radio" name="materia" /> Matem&aacute;ticas
+        <input type="radio" name="materia" /> Historia
+        <input type="radio" name="materia" /> Geograf&iacute;a
+        <input type="radio" name="materia" /> Lengua <br /><br />
+
+        Nombre <input type="text" name="nombre" /> <br />
+        Apellidos <input type="text" name="apellidos" /> <br />
+        Direcci&oacute;n <input type="text" name="direccion" /> <br />
+
+        <br />
+
+        Elija un color <input type="color" name="color" /> <br />
+        <br />
+        <textarea name="textarea" rows="3">
+Utilice este cuadro para escribir</textarea
+        >
+
+        <br /><br />
+        Elija una fecha <input name="fecha" type="date" /> <br /><br />
+        Elija una hora <input name="hora" type="time" /> <br /><br />
+
+        <select>
+          <option name="USB" value="USB">USB</option>
+          <option name="Paralelo" value="Palelo">Paralelo</option>
+          <option name="PS2" value="PS2">PS2</option>
+        </select>
+
+        <br /><br />
+        Elija un fichero: <br /><input type="file" /> <br />
+
+        <input type="checkbox" name="genero" /> Hombre
+        <input type="checkbox" name="genero" /> Mujer
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Resetear" />
+    </form>
+
+    <br /><br />
+  </body>
+</html>

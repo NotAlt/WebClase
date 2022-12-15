@@ -1,0 +1,20 @@
+div {
+  height: 20%;
+}
+h2 {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+a {
+  position: relative;
+  left: 75px;
+}
+ul {
+  position: fixed;
+  top: 650px;
+}
+
+p {
+  position: absolute;
+}

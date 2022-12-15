@@ -1,0 +1,141 @@
+<html>
+  <head>
+    <title>Parte 1</title>
+    <link rel="stylesheet" href="../../../../styles.css" />
+    <script type="text/javascript" src="../../../../default.js"></script>
+  </head>
+  <body>
+    <b>
+      <h1>Formulario B&aacute;sico</h1>
+    </b>
+    <hr />
+
+    <form action="procesa.html" method="post">
+      <p>
+        Nombre:
+        <input name="nombre" type="text" maxlength="10" /> <br /><br />
+        <input type="submit" value="Enviar consulta" /> <input type="reset" />
+      </p>
+      <br /><br />
+      <input type="submit" /> <br /><br />
+    </form>
+
+    <b>
+      <h1>Formulario de Usuario</h1>
+    </b>
+    <hr />
+
+    <form action="procesa.html" method="post">
+      <table border="0">
+        <tr>
+          <th>Nombre:</th>
+          <td><input name="nombre" type="text" maxlength="10" /></td>
+        </tr>
+
+        <tr>
+          <th>Apellidos:</th>
+          <td><input name="apellidos" type="text" maxlength="10" /></td>
+        </tr>
+
+        <tr>
+          <th>G&eacute;nero:</th>
+          <td>
+            <input name="genero" type="radio" maxlength="10" value="m" /> Hombre
+            <br />
+            <input name="genero" type="radio" maxlength="10" value="f" /> Mujer
+          </td>
+        </tr>
+
+        <tr>
+          <th>Edad:</th>
+          <td>
+            <input name="edad" type="number" min="0" value="18" />
+          </td>
+        </tr>
+
+        <tr>
+          <th>Ocupaci&oacute;n:</th>
+          <td>
+            <select name="ocupacion">
+              <option value="1">Trabajador</option>
+              <option value="2">Estudiante</option>
+              <option value="3">Jubilado</option>
+              <option value="otro">Otro</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Comentarios:</th>
+          <br />
+          <td>
+            <textarea rows="3" name="comentarios">
+                Escriba aqui sus comentarios
+            </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Enviar consulta" />
+          </td>
+        </tr>
+      </table>
+      <br /><br />
+    </form>
+
+    <b>
+      <h1>Formulario de club</h1>
+    </b>
+    <hr />
+
+    <form action="procesa.html" method="post">
+      <fieldset name="club de jugadores">
+        <p>
+          <legend>
+            <label>
+              <input type="checkbox" name="club" checked />
+              Utilizar tarjeta del club
+            </label>
+          </legend>
+        </p>
+
+        <p>
+          <label>
+            N&uacute;mero de la tarjeta:
+            <input name="nombreclub" required />
+          </label>
+        </p>
+        <fieldset name="numfields">
+          <legend>
+            <label>
+              <input name="tipoclub" type="radio" checked />
+              Mi tarjeta contiene números:
+            </label>
+          </legend>
+          <p>
+            <label>
+              N&uacute;mero de tarjeta:
+              <input name="numeroclub" required pattern="[-0-9]+" />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset name="letfields">
+          <legend>
+            <label>
+              <input name="tipoclub" type="radio" checked />
+              Mi tarjeta contiene letras:
+            </label>
+          </legend>
+          <p>
+            <label>
+              C&oacute;digo de tarjeta:
+              <input name="letraclub" required pattern="[A-Za-z]+" />
+            </label>
+          </p>
+        </fieldset>
+      </fieldset>
+      <br /><br />
+      <input type="submit" value="Enviar consulta" />
+    </form>
+  </body>
+</html>

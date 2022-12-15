@@ -1,0 +1,24 @@
+p {
+  color: #ff0000;
+  background-color: #00ff00;
+  background-image: url("https://imgs.search.brave.com/6UJdbGVALwgzdYqFUsX5Me_pzsJh5TW-e5RvfoybI04/rs:fit:1200:1080:1/g:ce/aHR0cHM6Ly9mb25k/b3NtaWwuY29tL2Zv/bmRvLzI3NDk2Lmpw/Zw");
+  text-algin: center;
+  text-decoration: underline;
+  font-family: "Arial";
+  text-indent: 5;
+  font-weight: normal;
+  font-style: italic;
+  font-size-adjust: 0.5;
+}
+
+div {
+  border: 5 px solid red;
+  border-top: thick double #ff0000;
+  border-right: medium solid #00ff00;
+  border-style: dotted solid double dashed;
+  border-color: red green blue pink;
+  margin: 10pc 5px 15px 20px;
+  margin-bottom: 1cm;
+  margin-left: 2cm;
+  padding: 10px 5px 15px 20px;
+}

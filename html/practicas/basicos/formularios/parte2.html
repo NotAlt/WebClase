@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Formulario de registro - Mi web</title>
+    <link rel="stylesheet" href="../../../../styles.css" />
+    <script type="text/javascript" src="../../../../default.js"></script>
+  </head>
+  <body>
+    <b>
+      <h1>Parte2</h1>
+    </b>
+
+    <b>
+      <h1>Formulario 1</h1>
+    </b>
+
+    <form action="procesa.html" method="get">
+      <table border="0">
+        <tr>
+          <th>Nombre:</th>
+          <td><input name="nombre" type="text" maxlength="50" /></td>
+        </tr>
+
+        <tr>
+          <th>Apellidos:</th>
+          <td><input name="apellidos" type="text" maxlength="50" /></td>
+        </tr>
+
+        <tr>
+          <th>G&eacute;nero:</th>
+          <td>
+            <input name="genero" type="radio" maxlength="10" value="m" /> Hombre
+            <br />
+            <input name="genero" type="radio" maxlength="10" value="f" /> Mujer
+          </td>
+        </tr>
+
+        <tr>
+          <th>Correo electr&oacute;nico:</th>
+          <td>
+            <input name="correo" type="text" />
+          </td>
+        </tr>
+
+        <tr>
+          <th>Poblaci&oacute;n</th>
+          <td>
+            <select name="poblacion">
+              <option value="1">Alicante</option>
+              <option value="2">Madrid</option>
+              <option value="3">Sevilla</option>
+              <option value="4">Valencia</option>
+            </select>
+          </td>
+        </tr>
+
+        <th>Descripci&oacute;n:</th>
+        <br />
+        <td>
+          <textarea rows="3" name="desc">Descripci&oacute;n...</textarea>
+        </td>
+
+        <tr>
+          <th><input name="newsletter" type="checkbox" checked /></th>
+          <br />
+          <td>Deseo recibir informaci&oacute;n sobre novedades y ofertas</td>
+        </tr>
+
+        <tr>
+          <th><input name="terminos" type="checkbox" /></th>
+          <br />
+          <td>
+            Declaro haber le&iacute;do y aceptar las condiciones generales del
+            programa y la normativa de protecci&oacute;n de datos
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <br />
+            <input type="submit" value="Enviar consulta" />
+          </td>
+        </tr>
+      </table>
+      <br /><br />
+    </form>
+    <br /><br />
+  </body>
+</html>
