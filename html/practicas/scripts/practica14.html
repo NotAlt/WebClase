@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Basicos</title>
+    <link rel="stylesheet" href="../../../styles.css" />
+    <script type="text/javascript" src="../../../default.js"></script>
+  </head>
+  <body>
+    <b>
+      <h1>Pr&aacute;ctica 14</h1>
+    </b>
+
+    <script>
+      let day = parseInt(prompt("Di un número entre el 1 y el 7"));
+
+      switch (day) {
+        case 1: {
+          day = "Lunes";
+          break;
+        }
+        case 2: {
+          day = "Martes";
+          break;
+        }
+        case 3: {
+          day = "Miercoles";
+          break;
+        }
+        case 4: {
+          day = "Jueves";
+          break;
+        }
+        case 5: {
+          day = "Viernes";
+          break;
+        }
+        case 6: {
+          day = "Sábado";
+          break;
+        }
+        case 7: {
+          day = "Domingo";
+          break;
+        }
+      }
+
+      document.write(`El dia es ${day}`);
+    </script>
+  </body>
+</html>

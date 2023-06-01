@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Basicos</title>
+    <link rel="stylesheet" href="../../../styles.css" />
+    <script type="text/javascript" src="../../../default.js"></script>
+  </head>
+  <body>
+    <b>
+      <h1>Pr&aacute;ctica 7</h1>
+    </b>
+
+    <script>
+      const n1 = parseInt(prompt("Escriba un número"));
+      const n2 = parseInt(prompt("Escriba otro número"));
+      const n3 = parseInt(prompt("Escriba otro número"));
+
+      let numbers = [n1, n2, n3];
+      let mayor = 0;
+
+      numbers.forEach((x) => {
+        if (mayor < x) {
+          mayor = x;
+        }
+      });
+
+      alert(mayor);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Basicos</title>
+    <link rel="stylesheet" href="../../../styles.css" />
+    <script type="text/javascript" src="../../../default.js"></script>
+  </head>
+  <body>
+    <b>
+      <h1>Pr&aacute;ctica 12</h1>
+    </b>
+
+    <script>
+      const n1 = parseInt(prompt("Escriba un número"));
+      const n2 = parseInt(prompt("Escriba un número"));
+
+      let mayor = n2;
+      if (n1 > n2) {
+        mayor = n1;
+      }
+
+      for (let i = 0; i <= mayor; i++) {
+        if (n1 % i == 0 && n2 % i == 0) {
+          alert(`${i} es divisor común de ${n1} y de ${n2}`);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Basicos</title>
+    <link rel="stylesheet" href="../../../styles.css" />
+    <script type="text/javascript" src="../../../default.js"></script>
+
+    <script>
+      function calcula(operacion) {
+        let calculator = document.getElementById("calculator");
+        let operando1 = parseInt(document.calc.operando1.value);
+        let operando2 = parseInt(document.calc.operando2.value);
+
+        switch (operacion) {
+          case "+":
+            document.calc.resultado.value = operando1 + operando2;
+            break;
+          case "-":
+            document.calc.resultado.value = operando1 - operando2;
+            break;
+          case "*":
+            document.calc.resultado.value = operando1 * operando2;
+            break;
+          case "/":
+            document.calc.resultado.value = operando1 / operando2;
+            break;
+        }
+
+        const number = document.calc.resultado.value;
+        let result = "";
+
+        let divisors = 0;
+        for (let i = 0; i <= number; i++) {
+          if (i % number == 0) {
+            divisors += i;
+          }
+        }
+
+        let fact = 1;
+        for (i = 1; i <= number; i++) {
+          fact *= i;
+        }
+
+        result += parseInt() % 2 == 0 ? "ES PAR" : "ES IMPAR";
+        result += `<br> Su factorial es ${fact}`;
+        result += `<br> Este numero ${
+          number == divisors ? "es perfecto" : "no es perfecto"
+        }`;
+
+        calculator.innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <b>
+      <h1>Pr&aacute;ctica 19</h1>
+    </b>
+
+    <div id="calculator"></div>
+
+    <form name="calc">
+      <input type="Text" name="operando1" value="0" size="12" />
+      <br />
+      <input type="Text" name="operando2" value="0" size="12" />
+      <br />
+      <input type="Button" name="" value=" + " onclick="calcula('+')" />
+      <input type="Button" name="" value=" - " onclick="calcula('-')" />
+      <input type="Button" name="" value=" X " onclick="calcula('*')" />
+      <input type="Button" name="" value=" / " onclick="calcula('/')" />
+      <br />
+      <input type="Text" name="resultado" value="0" size="12" />
+    </form>
+  </body>
+</html>

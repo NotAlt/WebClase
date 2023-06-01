@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Basicos</title>
+    <link rel="stylesheet" href="../../../styles.css" />
+    <script type="text/javascript" src="../../../default.js"></script>
+  </head>
+  <body>
+    <b>
+      <h1>Pr&aacute;ctica 10</h1>
+    </b>
+
+    <script>
+      const n1 = parseInt(prompt("Escriba un número"));
+      const array = [2, 3, 5, 7];
+      const divisibles = [];
+
+      array.forEach((x) => {
+        if (n1 % x != 0) {
+          alert("Es divisible por " + x);
+        } else {
+          alert("No es divisible por " + x);
+        }
+      });
+    </script>
+  </body>
+</html>

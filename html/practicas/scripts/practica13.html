@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Basicos</title>
+    <link rel="stylesheet" href="../../../styles.css" />
+    <script type="text/javascript" src="../../../default.js"></script>
+  </head>
+  <body>
+    <b>
+      <h1>Pr&aacute;ctica 13</h1>
+    </b>
+
+    <script>
+      let n = parseInt(
+        prompt("Introduce un número cualquiera para averiguar si es primo")
+      );
+
+      let esPrimo = true;
+      for (let i = 2; i < n; i++) {
+        if (n % i == 0) {
+          esPrimo = false;
+        }
+
+        let esPrimo2 = true;
+        for (let j = 2; j < i; j++) {
+          if (i % j == 0) {
+            esPrimo2 = false;
+          }
+        }
+
+        alert(`El número ${i} es ${esPrimo2 ? "primo" : "no primo"}`);
+      }
+
+      if (esPrimo) {
+        document.write("<center><h1>" + n + " es primo</h1></center>");
+      } else {
+        document.write("<center><h1>" + n + " no es primo</h1></center>");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Basicos</title>
+    <link rel="stylesheet" href="../../../styles.css" />
+    <script type="text/javascript" src="../../../default.js"></script>
+  </head>
+  <body>
+    <b>
+      <h1>Pr&aacute;ctica 18</h1>
+    </b>
+
+    <script>
+      let score = prompt("Escriba la nota del alumno");
+      if (score < 5) {
+        score = "Ha suspendido";
+      } else if (score == 5) {
+        score = "Ha obtenido un aprobado bajo";
+      } else if (score == 6) {
+        score = "Ha obtenido un aprobado alto";
+      } else if (score == 7) {
+        score = "Ha obtenido un notable bajo";
+      } else if (score == 8) {
+        score = "Ha obtenido un notable alto";
+      } else if (score == 9) {
+        score = "Ha obtenido un sobresaliente bajo";
+      } else if (score == 10) {
+        score = "Ha obtenido un sobresaliente alto";
+      }
+      document.write(score);
+    </script>
+  </body>
+</html>
