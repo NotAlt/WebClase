@@ -30,8 +30,9 @@
             break;
           case "Perfecto":
             let divisors = 0;
-            for (let i = 0; i <= number; i++) {
-              if (i % number == 0) {
+            for (let i = 0; i < number; i++) {
+              console.log(i, number, i % number);
+              if (number % i == 0) {
                 divisors += i;
               }
             }
