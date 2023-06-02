@@ -7,8 +7,10 @@
     <script>
       function calcula(operacion) {
         let calculator = document.getElementById("calculator");
+        let messageBox = document.getElementById("messageBox");
         let operando1 = parseInt(document.calc.operando1.value);
         let operando2 = parseInt(document.calc.operando2.value);
+        let number = parseInt(document.calc.resultado.value);
 
         switch (operacion) {
           case "+":
@@ -23,30 +25,31 @@
           case "/":
             document.calc.resultado.value = operando1 / operando2;
             break;
+          case "Par":
+            messageBox.innerText = number % 2 == 0 ? "ES PAR" : "ES IMPAR";
+            break;
+          case "Perfecto":
+            let divisors = 0;
+            for (let i = 0; i <= number; i++) {
+              if (i % number == 0) {
+                divisors += i;
+              }
+            }
+
+            messageBox.innerText = `Este numero ${
+              number == divisors ? "es perfecto" : "no es perfecto"
+            }`;
+            break;
+
+          case "Factorial":
+            let fact = 1;
+            for (i = 1; i <= number; i++) {
+              fact *= i;
+            }
+
+            messageBox.innerText = fact;
+            break;
         }
-
-        const number = document.calc.resultado.value;
-        let result = "";
-
-        let divisors = 0;
-        for (let i = 0; i <= number; i++) {
-          if (i % number == 0) {
-            divisors += i;
-          }
-        }
-
-        let fact = 1;
-        for (i = 1; i <= number; i++) {
-          fact *= i;
-        }
-
-        result += number % 2 == 0 ? "ES PAR" : "ES IMPAR";
-        result += `<br> Su factorial es ${fact}`;
-        result += `<br> Este numero ${
-          number == divisors ? "es perfecto" : "no es perfecto"
-        }`;
-
-        calculator.innerHTML = result;
       }
     </script>
   </head>
@@ -66,8 +69,28 @@
       <input type="Button" name="" value=" - " onclick="calcula('-')" />
       <input type="Button" name="" value=" X " onclick="calcula('*')" />
       <input type="Button" name="" value=" / " onclick="calcula('/')" />
+
       <br />
+      <br />
+
       <input type="Text" name="resultado" value="0" size="12" />
+      <br />
+      <br />
+
+      <input type="Button" name="" value=" Es par? " onclick="calcula('Par')" />
+      <input
+        type="Button"
+        name=""
+        value=" Es Perfecto? "
+        onclick="calcula('Perfecto')"
+      />
+      <input
+        type="Button"
+        name=""
+        value=" Calcular factorial "
+        onclick="calcula('Factorial')"
+      />
+      <p id="messageBox"></p>
     </form>
   </body>
 </html>
